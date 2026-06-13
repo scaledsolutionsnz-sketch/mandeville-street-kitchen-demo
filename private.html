@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Share Your Feedback | Mandeville Street Kitchen</title>
+<meta name="description" content="Tell Mandeville Street Kitchen what we could do better. Your private feedback goes straight to the owner." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1714'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23b5562f' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Mandeville Street <span class="dot"></span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="navlink" href="index.html#menu">Menu</a>
+      <a class="navlink" href="index.html#about">About</a>
+      <a class="btn btn-primary" href="index.html#contact">Book a Table</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow center" style="justify-content:center;">We're listening</span>
+    <h1>Tell us how we can do better</h1>
+    <p style="margin-left:auto;margin-right:auto;">Thanks for being honest. Your feedback comes straight to the owner — we read every message and use it to improve.</p>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="wrap">
+    <div class="rate-wrap">
+      <div class="rate-card" style="text-align:left;">
+        <!-- Feedback form -->
+        <form id="feedbackForm" action="https://formsubmit.co/info@mandevillestreetkiitchen.co.nz" method="POST">
+          <input type="hidden" name="_subject" value="Private feedback — Mandeville Street Kitchen" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://mandeville-street-kitchen-demo.vercel.app/private.html?sent=1" />
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="First and last name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.co.nz" required />
+          </div>
+          <div class="field">
+            <label for="rating">Your rating</label>
+            <input id="rating" name="rating" type="text" readonly value="" />
+          </div>
+          <div class="field">
+            <label for="feedback">What happened?</label>
+            <textarea id="feedback" name="feedback" placeholder="Tell us what let you down and how we could put it right…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Private Feedback</button>
+          <p class="form-note">This goes privately to the owner — it won't be posted publicly.</p>
+        </form>
+
+        <!-- Success state -->
+        <div class="success-state" id="success">
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h2 style="font-size:1.7rem;">Thank you — message received</h2>
+          <p style="color:var(--muted);margin:12px 0 24px;">We genuinely appreciate you taking the time. The team will read your feedback and do better next time.</p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom" style="border-top:none;justify-content:center;">
+      <span>© <span data-year>2026</span> Mandeville Street Kitchen · <a href="index.html">Back to site</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var rating = params.get('rating');
+  var ratingField = document.getElementById('rating');
+  if (rating && ratingField) {
+    var n = Math.max(1, Math.min(5, parseInt(rating, 10) || 0));
+    ratingField.value = n + ' out of 5 stars';
+  } else if (ratingField) {
+    ratingField.value = 'Not rated';
+  }
+  // Success state after FormSubmit redirect (?sent=1)
+  if (params.get('sent') === '1') {
+    var form = document.getElementById('feedbackForm');
+    var success = document.getElementById('success');
+    if (form && success) { form.style.display = 'none'; success.classList.add('show'); }
+  }
+  var yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
