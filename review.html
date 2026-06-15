@@ -1,92 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leave a Review | Mandeville Street Kitchen</title>
-<meta name="description" content="Tell us how your visit to Mandeville Street Kitchen went — your feedback helps our Christchurch kitchen keep getting better." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1714'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23b5562f' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<meta name="description" content="Tell us how your visit to Mandeville Street Kitchen went.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#241b16">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23241b16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23c2603c' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Nav -->
-<header class="nav scrolled">
-  <div class="nav-inner">
-    <a href="index.html" class="brand">Mandeville Street <span class="dot"></span></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a class="navlink" href="index.html#menu">Menu</a>
-      <a class="navlink" href="index.html#about">About</a>
-      <a class="navlink" href="index.html#reviews">Reviews</a>
-      <a class="btn btn-primary" href="index.html#contact">Book a Table</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
-
-<section class="page-hero">
-  <div class="wrap" style="text-align:center;">
-    <span class="eyebrow center" style="justify-content:center;">Your feedback</span>
+<main class="review-page">
+  <div class="review-card">
+    <p class="eyebrow">Mandeville Street Kitchen</p>
     <h1>How was your visit?</h1>
-    <p style="margin-left:auto;margin-right:auto;">Tap a rating below. Your honest feedback helps our small Christchurch kitchen keep getting better.</p>
-  </div>
-</section>
+    <p>Tap a star to let us know — your feedback helps our little café get better.</p>
 
-<section class="section-cream">
-  <div class="wrap">
-    <div class="rate-wrap">
-      <div class="rate-card">
-        <h2 style="font-size:1.6rem;">Rate your experience</h2>
-        <div class="rate-stars" id="stars" role="radiogroup" aria-label="Star rating">
-          <button type="button" data-v="1" aria-label="1 star"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></button>
-          <button type="button" data-v="2" aria-label="2 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></button>
-          <button type="button" data-v="3" aria-label="3 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></button>
-          <button type="button" data-v="4" aria-label="4 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></button>
-          <button type="button" data-v="5" aria-label="5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></button>
-        </div>
-        <p class="rate-hint" id="hint">Tap a star to rate your visit</p>
-      </div>
+    <div class="rating-stars" id="stars">
+      <button data-v="1" aria-label="1 star">★</button>
+      <button data-v="2" aria-label="2 stars">★</button>
+      <button data-v="3" aria-label="3 stars">★</button>
+      <button data-v="4" aria-label="4 stars">★</button>
+      <button data-v="5" aria-label="5 stars">★</button>
+    </div>
+
+    <div class="review-path" id="happy">
+      <p>Thanks so much! Would you mind sharing that on Google? It only takes a moment and really helps other locals find us.</p>
+      <a class="btn btn--primary" href="https://www.google.com/maps/search/Mandeville+Street+Kitchen+Christchurch" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+
+    <div class="review-path" id="unhappy">
+      <p>We're sorry it wasn't quite right. We'd genuinely like to hear what happened so we can fix it — this goes straight to Sarah, privately.</p>
+      <a class="btn btn--dark" href="private.html">Tell us privately</a>
     </div>
   </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-bottom" style="border-top:none;justify-content:center;">
-      <span>© <span data-year>2026</span> Mandeville Street Kitchen · <a href="index.html">Back to site</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
-    </div>
-  </div>
-</footer>
+</main>
 
 <script>
-  // 4–5 stars → Google review; 1–3 → private feedback form
-  var GOOGLE_REVIEW_URL = "https://g.page/r/PLACEHOLDER/review";
+(function () {
   var stars = document.querySelectorAll('#stars button');
-  var hint = document.getElementById('hint');
-  var hints = {
-    1: "Sorry to hear that — tell us what we can fix.",
-    2: "We'd like to put this right. Share the details.",
-    3: "Thanks — let us know how we can do better.",
-    4: "Great! Redirecting you to leave a Google review…",
-    5: "Wonderful! Redirecting you to leave a Google review…"
-  };
-  stars.forEach(function (btn) {
-    btn.addEventListener('mouseenter', function () { paint(+btn.dataset.v); });
-    btn.addEventListener('click', function () {
-      var v = +btn.dataset.v;
-      paint(v); hint.textContent = hints[v];
-      setTimeout(function () {
-        if (v >= 4) window.location.href = GOOGLE_REVIEW_URL;
-        else window.location.href = "private.html?rating=" + v;
-      }, 650);
+  var happy = document.getElementById('happy');
+  var unhappy = document.getElementById('unhappy');
+  stars.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = parseInt(b.dataset.v, 10);
+      stars.forEach(function (s) { s.classList.toggle('active', parseInt(s.dataset.v,10) <= v); });
+      if (v >= 4) { happy.classList.add('show'); unhappy.classList.remove('show'); }
+      else { unhappy.classList.add('show'); happy.classList.remove('show'); }
     });
   });
-  document.getElementById('stars').addEventListener('mouseleave', function () { paint(0); });
-  function paint(v) { stars.forEach(function (b) { b.classList.toggle('lit', +b.dataset.v <= v); }); }
-  var yr = document.querySelector('[data-year]'); if (yr) yr.textContent = new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
