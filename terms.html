@@ -3,45 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Use | Mandeville Street Kitchen</title>
-<meta name="description" content="Terms of use for the Mandeville Street Kitchen website.">
+<title>Terms | Mandeville Street Kitchen</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#241b16">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23241b16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23c2603c' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="legal">
-  <h1>Terms of Use</h1>
-  <p class="updated">Last updated: June 2026</p>
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html#top" class="brand"><span class="brand__mark">M</span> Mandeville Street Kitchen</a>
+    <nav class="nav__links">
+      <a href="index.html#visit" class="btn btn--primary nav__cta">Visit Us</a>
+    </nav>
+  </div>
+</header>
 
-  <p>Welcome to the Mandeville Street Kitchen website. By using this site you agree to the terms below. Please read them before relying on any information here.</p>
+<section class="section section--paper">
+  <div class="wrap page">
+    <a href="index.html#top" class="back-link">← Back to home</a>
+    <h1>Terms of Use</h1>
+    <p>Welcome to the Mandeville Street Kitchen website. By using this site you agree to the terms below. This is a demonstration website.</p>
 
-  <h2>About this site</h2>
-  <p>This website provides general information about Mandeville Street Kitchen, a café in Christchurch, New Zealand — including what we serve, where to find us and how to get in touch. It is for general information only.</p>
+    <h2>About this site</h2>
+    <p>This website provides general information about Mandeville Street Kitchen, a café in Christchurch, including what we serve, where to find us and how to get in touch. Menu items, opening hours and details may change without notice — please call ahead if anything matters for your visit.</p>
 
-  <h2>Menu, prices and availability</h2>
-  <p>Menu items, specials, opening hours and prices can change without notice and depend on the day and on availability. Anything shown on this site is indicative — please check with us directly for the latest details before you visit or place an order.</p>
+    <h2>Bookings &amp; enquiries</h2>
+    <p>Enquiries sent through this site are requests only and are not confirmed until we reply to you. We'll do our best to respond promptly during opening hours.</p>
 
-  <h2>Enquiries and bookings</h2>
-  <p>Sending an enquiry or booking request through this site does not confirm a booking. A booking is only confirmed once we reply to you directly. We'll do our best to accommodate every request but cannot guarantee availability.</p>
+    <h2>Accuracy of information</h2>
+    <p>We take care to keep information current, but we can't guarantee everything is complete or error-free at all times. Photography is indicative of the café's style.</p>
 
-  <h2>Accuracy of information</h2>
-  <p>We take care to keep this site accurate and up to date, but we make no warranty that it is complete, current or error-free. Photographs are indicative and may not reflect current menu items or the premises exactly.</p>
+    <h2>Intellectual property</h2>
+    <p>The content, branding and layout of this site belong to Mandeville Street Kitchen and may not be reproduced without permission.</p>
 
-  <h2>Links to other sites</h2>
-  <p>This site may link to third-party websites (such as Google Maps or review platforms). We are not responsible for the content or practices of those sites.</p>
+    <h2>Contact</h2>
+    <p>Questions about these terms? Call us on +64 21 258 9734 or use the enquiry form on our home page.</p>
+    <p style="margin-top:2rem;font-size:.85rem;opacity:.7">Last updated June 2026.</p>
+  </div>
+</section>
 
-  <h2>Liability</h2>
-  <p>To the extent permitted by law, Mandeville Street Kitchen is not liable for any loss or damage arising from your use of, or reliance on, this website. Nothing in these terms limits your rights under the Consumer Guarantees Act 1993 or other New Zealand law.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about these terms? Call us on <a href="tel:+64212589734">021 258 9734</a>.</p>
-
-  <a class="back-link" href="index.html">← Back to the website</a>
-</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="border:0">
+      <span>© <span id="year"></span> Mandeville Street Kitchen · Riccarton, Christchurch</span>
+      <a href="privacy.html" class="back-link" style="margin:0">Privacy →</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>

@@ -3,46 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy | Mandeville Street Kitchen</title>
-<meta name="description" content="How Mandeville Street Kitchen handles your information.">
+<title>Privacy | Mandeville Street Kitchen</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#241b16">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23241b16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23c2603c' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="legal">
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: June 2026</p>
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html#top" class="brand"><span class="brand__mark">M</span> Mandeville Street Kitchen</a>
+    <nav class="nav__links">
+      <a href="index.html#visit" class="btn btn--primary nav__cta">Visit Us</a>
+    </nav>
+  </div>
+</header>
 
-  <p>Mandeville Street Kitchen respects your privacy. This policy explains what we collect through this website and how we handle it, in line with the Privacy Act 2020 (New Zealand).</p>
+<section class="section section--paper">
+  <div class="wrap page">
+    <a href="index.html#top" class="back-link">← Back to home</a>
+    <h1>Privacy Policy</h1>
+    <p>Mandeville Street Kitchen respects your privacy. This policy explains how we handle information you share through this website, in line with the New Zealand Privacy Act 2020.</p>
 
-  <h2>What we collect</h2>
-  <p>When you send an enquiry, booking request or feedback through this site, we collect only what you give us — typically your name, your contact details (phone or email) and your message. We don't ask for anything we don't need.</p>
+    <h2>What we collect</h2>
+    <p>If you send an enquiry or feedback through this site, we collect the details you provide — typically your name, email, phone number and your message. We don't collect anything you don't choose to send us.</p>
 
-  <h2>How we use it</h2>
-  <ul>
-    <li>To reply to your enquiry, confirm a booking or respond to your feedback</li>
-    <li>To keep a record of your request so we can follow up if needed</li>
-  </ul>
-  <p>We do not sell or rent your information, and we won't use it for marketing without your consent.</p>
+    <h2>How we use it</h2>
+    <p>We use your details only to respond to your enquiry, confirm a booking, or follow up on feedback. We don't sell or share your information with third parties for marketing.</p>
 
-  <h2>How it's handled</h2>
-  <p>Enquiry forms on this site are delivered to us by a third-party form service. Your message is sent to our email so we can respond. We keep your details only as long as needed to deal with your enquiry.</p>
+    <h2>Form handling</h2>
+    <p>Enquiry forms on this site are processed by a third-party form service to deliver your message to us by email. Your details are used solely to pass on that message.</p>
 
-  <h2>Cookies and analytics</h2>
-  <p>This is a simple informational website. It does not set advertising cookies. Any basic, anonymous usage statistics are used only to understand how the site is performing.</p>
+    <h2>Keeping it secure</h2>
+    <p>We take reasonable steps to keep your information safe and only hold it for as long as we need to deal with your enquiry.</p>
 
-  <h2>Your rights</h2>
-  <p>You can ask us what personal information we hold about you and request that we correct it. Contact us and we'll help.</p>
+    <h2>Your choices</h2>
+    <p>You can ask us what information we hold about you, or ask us to correct or delete it, by calling +64 21 258 9734.</p>
+    <p style="margin-top:2rem;font-size:.85rem;opacity:.7">Last updated June 2026.</p>
+  </div>
+</section>
 
-  <h2>Contact</h2>
-  <p>To ask about your information, call <a href="tel:+64212589734">021 258 9734</a>.</p>
-
-  <a class="back-link" href="index.html">← Back to the website</a>
-</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="border:0">
+      <span>© <span id="year"></span> Mandeville Street Kitchen · Riccarton, Christchurch</span>
+      <a href="terms.html" class="back-link" style="margin:0">Terms →</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
