@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandeville Street Kitchen | Café & All-Day Kitchen, Christchurch</title>
+<meta name="description" content="A relaxed neighbourhood café and all-day kitchen on Mandeville Street, Christchurch. Proper coffee, brunch made fresh, and a warm welcome — walk in or book a table.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Mandeville Street Kitchen | Café & Kitchen, Christchurch">
+<meta property="og:description" content="Proper coffee and honest brunch on Mandeville Street, Christchurch. Open daily — walk in or book a table.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/p9.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <img src="img/logo-white.png" alt="Mandeville Street Kitchen">
+  <span class="loader-bar"></span>
+</div>
+<script>
+  window.addEventListener('load', function () {
+    var l = document.getElementById('loader');
+    if (l) setTimeout(function () { l.classList.add('hide'); }, 650);
+  });
+  setTimeout(function () { var l = document.getElementById('loader'); if (l) l.classList.add('hide'); }, 3500);
+</script>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" class="brand"><img class="brand-logo" src="img/logo-green.png" alt="Mandeville Street Kitchen"></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#menu">What's On</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#crew">The Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+      <a href="tel:+6421258 9734" class="btn btn--primary nav__cta">Call 021 258 9734</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__slides" id="heroSlides">
+    <div class="hero__slide is-active" data-bg="img/p9.jpg"></div>
+    <div class="hero__slide" data-bg="img/p3.jpg"></div>
+    <div class="hero__slide" data-bg="img/p13.jpg"></div>
+    <div class="hero__slide" data-bg="img/p1.jpg"></div>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap hero__inner">
+    <span class="eyebrow">Christchurch · All-day café &amp; kitchen</span>
+    <h1>Proper coffee and honest brunch on Mandeville Street.</h1>
+    <p class="hero__copy">A relaxed neighbourhood spot for your morning flat white, a slow weekend brunch, or lunch that doesn't rush you. Made fresh, served with a smile.</p>
+    <div class="hero__cta">
+      <a href="#visit" class="btn btn--primary">Find us &amp; opening hours</a>
+      <a href="tel:+6421258 9734" class="btn btn--ghost">Call 021 258 9734</a>
+    </div>
+  </div>
+  <span class="hero__scroll">Scroll</span>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust">
+  <div class="wrap trust__grid">
+    <div class="trust__item">
+      <span class="trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span>
+      <div><h3>Specialty espresso</h3><p>Carefully pulled coffee, every cup, from open to close.</p></div>
+    </div>
+    <div class="trust__item">
+      <span class="trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span>
+      <div><h3>Made fresh daily</h3><p>Kitchen-cooked plates and baking prepared in-house each morning.</p></div>
+    </div>
+    <div class="trust__item">
+      <span class="trust__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+      <div><h3>On Mandeville Street</h3><p>Easy to find in the heart of Riccarton — walk-ins and bookings both welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES / WHAT'S ON -->
+<section class="section section--paper" id="menu">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <span class="eyebrow">What's on</span>
+        <h2 class="lead-head">From your first coffee to a long lunch</h2>
+      </div>
+      <p class="lead-sub">Whatever the time of day, there's a reason to pull up a chair. Here's what keeps the regulars coming back.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p2.jpg" alt="Fresh pastries and baking">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/></svg></span>
+        <h3>Coffee &amp; the morning cup</h3>
+        <p>Flat whites, long blacks, and the full line-up — plus loose-leaf teas, hot chocolate and an oat-milk option that actually behaves.</p>
+      </div>
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p3.jpg" alt="Colourful brunch plate">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></span>
+        <h3>All-day brunch</h3>
+        <p>Big breakfasts, eggs your way, smashed avo, French toast and the kind of plate that sorts out a slow Saturday morning.</p>
+      </div>
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p4.jpg" alt="Fresh seasonal salad">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18"/><path d="M5 11V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5"/><path d="M4 11l1 9h14l1-9"/></svg></span>
+        <h3>Lunch plates</h3>
+        <p>Seasonal salads, toasted sandwiches, soup of the day and a couple of heartier specials that change with what's good.</p>
+      </div>
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p5.jpg" alt="Slices and sweet treats">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h14l4 4-4 4H3z"/><path d="M3 12h18"/></svg></span>
+        <h3>Cabinet &amp; sweet treats</h3>
+        <p>Fresh baking, slices, scones and something with your coffee — the cabinet's stocked from the moment we open.</p>
+      </div>
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p1.jpg" alt="Fresh sandwiches to go">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+        <h3>Takeaway &amp; grab-and-go</h3>
+        <p>Short on time? Coffee and a bite to take with you, made the same way as if you'd stayed.</p>
+      </div>
+      <div class="svc-card">
+        <img class="svc-card__img" loading="lazy" src="img/p13.jpg" alt="Catering platters and desserts">
+        <span class="svc-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>Catering &amp; functions</h3>
+        <p>Feeding a meeting, a team morning tea or a small gathering? Get in touch and we'll sort a spread to suit.</p>
+      </div>
+    </div>
+    <p class="svc-note">Menu items shown are typical of the kitchen — pop in or call for the current day's offering and specials.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section--bone" id="about">
+  <div class="wrap about">
+    <div class="about__media">
+      <img src="img/p15.jpg" alt="Inside Mandeville Street Kitchen — relaxed café seating and natural light" width="1200" height="900" loading="lazy">
+      <span class="about__tag">On Mandeville Street</span>
+    </div>
+    <div>
+      <span class="eyebrow">Our place</span>
+      <h2 class="lead-head">A neighbourhood kitchen, run by people who love feeding people</h2>
+      <p>Mandeville Street Kitchen is a small, independent café in Christchurch built around good coffee, honest food and a relaxed welcome. No fuss, no rush — just a comfortable spot to start your day, catch up with a friend, or get out of the office for a proper break.</p>
+      <p>Everything's made with care in our own kitchen, and we'd rather know you by name than by table number. Whether you're a daily regular or it's your first visit, you'll get the same warm welcome.</p>
+      <ul class="checklist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Locally owned and run, right here in Christchurch</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Food made fresh in-house, coffee done properly</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Friendly, unhurried service — dietary options always sorted</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Fresh from the kitchen</span>
+      <h2>A taste of what we make</h2>
+      <p>Platters, pastries, salads and sweet treats — made fresh at Mandeville Street Kitchen.</p>
+    </div>
+    <div class="gallery">
+      <figure><img loading="lazy" src="img/p9.jpg" alt="Decorated berry tart"></figure>
+      <figure><img loading="lazy" src="img/p3.jpg" alt="Colourful roast vegetable platter"></figure>
+      <figure><img loading="lazy" src="img/p1.jpg" alt="Fresh sandwich platter"></figure>
+      <figure><img loading="lazy" src="img/p10.jpg" alt="Layered fig and nut cake"></figure>
+      <figure><img loading="lazy" src="img/p7.jpg" alt="Mezze and dip platter"></figure>
+      <figure><img loading="lazy" src="img/p0.jpg" alt="Savoury pastry selection"></figure>
+      <figure><img loading="lazy" src="img/p13.jpg" alt="Display of mini tarts and desserts"></figure>
+      <figure><img loading="lazy" src="img/p4.jpg" alt="Fresh microgreen salad"></figure>
+      <figure><img loading="lazy" src="img/p5.jpg" alt="Brownie and slice squares"></figure>
+      <figure><img loading="lazy" src="img/p11.jpg" alt="Layered dessert slices"></figure>
+      <figure><img loading="lazy" src="img/p2.jpg" alt="Pastry and roll platter"></figure>
+      <figure><img loading="lazy" src="img/p6.jpg" alt="Mini tarts and pastries"></figure>
+      <figure><img loading="lazy" src="img/p8.jpg" alt="Roast potato platter"></figure>
+      <figure><img loading="lazy" src="img/p12.jpg" alt="Chocolate and cream dessert"></figure>
+      <figure><img loading="lazy" src="img/p14.jpg" alt="Chocolate tart slice"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CREW -->
+<section class="section section--paper" id="crew">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <span class="eyebrow">The team</span>
+        <h2 class="lead-head">The faces behind the counter</h2>
+      </div>
+      <p class="lead-sub">A small crew that keeps the coffee flowing and the kitchen humming, morning to afternoon.</p>
+    </div>
+    <div class="crew-grid">
+      <div class="crew-card">
+        <div class="crew-av">S</div>
+        <h3>Sarah</h3>
+        <div class="role">Owner &amp; Front of House</div>
+        <p>Runs the floor and knows the regulars' orders — the one making sure your visit is a good one.</p>
+      </div>
+      <div class="crew-card">
+        <div class="crew-av">HC</div>
+        <h3>Head Chef</h3>
+        <div class="role">Kitchen Lead</div>
+        <p>Plans the menu and cooks every plate fresh, with the specials changing to suit the season.</p>
+      </div>
+      <div class="crew-card">
+        <div class="crew-av">B</div>
+        <h3>Lead Barista</h3>
+        <div class="role">Coffee</div>
+        <p>Dials in the espresso each morning so your cup tastes the same great way every time.</p>
+      </div>
+      <div class="crew-card">
+        <div class="crew-av">FT</div>
+        <h3>Front Team</h3>
+        <div class="role">Service &amp; Cabinet</div>
+        <p>The friendly hands taking orders, clearing tables and keeping the welcome warm.</p>
+      </div>
+    </div>
+    <span class="badge">Example roles — your real team and titles go here</span>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section section--bone" id="reviews">
+  <div class="wrap">
+    <div class="svc-head">
+      <div>
+        <span class="eyebrow">Kind words</span>
+        <h2 class="lead-head">What locals say</h2>
+      </div>
+      <p class="lead-sub">A few words from the Christchurch regulars who make this place what it is.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div class="rev-stars">★★★★★</div>
+        <p>"My go-to for a weekend brunch. The coffee is genuinely excellent and the big breakfast sets me up for the day. Staff always remember us."</p>
+        <div class="rev-by">Megan T. <span>Riccarton</span></div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">★★★★★</div>
+        <p>"Found it on a whim and now I'm in twice a week. Lovely relaxed spot, friendly team, and the cabinet baking is dangerous in the best way."</p>
+        <div class="rev-by">David H. <span>Fendalton</span></div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-stars">★★★★★</div>
+        <p>"Great little local. We took the whole work team in for a morning tea and they sorted everything without any fuss. Will be back."</p>
+        <div class="rev-by">Priya N. <span>Addington</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW FUNNEL BANNER -->
+<section class="funnel">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center;color:#ffd9c7">Enjoyed your visit?</span>
+    <h2>Happy with your coffee? Leave us a review</h2>
+    <div class="stars">★★★★★</div>
+    <p>It only takes a moment, and it helps other locals find us. We'd genuinely appreciate it.</p>
+    <a href="review.html" class="btn btn--primary">Leave a review</a>
+  </div>
+</section>
+
+<!-- CONTACT / VISIT -->
+<section class="section contact" id="visit">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow" style="color:#ffd9c7">Visit us</span>
+      <h2 class="lead-head">Come in, or get in touch</h2>
+      <p class="lead-sub">Drop by for a coffee, or send us a message about a booking, a function or catering. We'll get back to you quickly.</p>
+      <div class="cinfo">
+        <a href="tel:+6421258 9734">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span><small>Phone</small>+64 21 258 9734</span>
+        </a>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><small>Find us</small>Mandeville Street, Riccarton, Christchurch</span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span><small>Hours</small>Mon–Fri 7am–3pm · Sat–Sun 8am–3pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form contact-panel">
+      <h3 class="panel-title">Get in touch</h3>
+      <p class="panel-sub">Give us a call or send an email about a booking, function or catering — we'll get back to you quickly.</p>
+      <a class="btn btn--primary" href="tel:+64212589734">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Call 021 258 9734
+      </a>
+      <a class="btn btn--dark" href="mailto:hello@mandevillestreetkitchen.co.nz">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email us
+      </a>
+      <div class="panel-map">
+        <iframe src="https://www.google.com/maps?q=Mandeville%20Street%20Kitchen%20Riccarton%20Christchurch&output=embed" loading="lazy" title="Map to Mandeville Street Kitchen" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a href="#top" class="brand"><img class="brand-logo foot-logo" src="img/logo-white.png" alt="Mandeville Street Kitchen"></a>
+      <nav class="footer__links">
+        <a href="#menu">What's On</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit Us</a>
+        <a href="review.html">Leave a Review</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Mandeville Street Kitchen · Riccarton, Christchurch</span>
+      <span>Café &amp; all-day kitchen · NZ owned and run</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
