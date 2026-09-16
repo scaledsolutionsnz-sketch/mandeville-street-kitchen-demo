@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Feedback | Mandeville Street Kitchen</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html#top" class="brand"><span class="brand__mark">M</span> Mandeville Street Kitchen</a>
+    <nav class="nav__links">
+      <a href="index.html#visit" class="btn btn--primary nav__cta">Visit Us</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section section--paper">
+  <div class="wrap page">
+    <a href="review.html" class="back-link">← Back</a>
+    <span class="eyebrow">We're listening</span>
+    <h1>Tell us privately</h1>
+    <p>If something about your visit wasn't right, we'd much rather hear it directly so we can fix it. This goes straight to the team, not posted publicly.</p>
+    <form class="form" action="https://formsubmit.co/hello@mandevillestreetkitchen.co.nz" method="POST" style="margin-top:1.5rem">
+      <input type="hidden" name="_subject" value="Private feedback, Mandeville Street Kitchen">
+      <input type="text" name="_honey" style="display:none">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" placeholder="First name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email (so we can reply)</label>
+        <input id="email" type="email" name="email" placeholder="you@email.com">
+      </div>
+      <div class="field">
+        <label for="msg">What happened?</label>
+        <textarea id="msg" name="message" placeholder="Tell us what we could have done better…" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send feedback</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="border:0">
+      <span>© <span id="year"></span> Mandeville Street Kitchen · Riccarton, Christchurch</span>
+      <a href="index.html#top" class="back-link" style="margin:0">← Back to home</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
