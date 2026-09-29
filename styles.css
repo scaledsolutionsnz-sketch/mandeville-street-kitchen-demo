@@ -150,8 +150,27 @@ img { display: block; max-width: 100%; }
 .rev-card { background: var(--bone); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.7rem; }
 .rev-stars { color: var(--accent); letter-spacing: 2px; margin-bottom: .8rem; }
 .rev-card p { font-size: 1.02rem; color: var(--text); }
-.rev-by { margin-top: 1.1rem; font-weight: 600; font-size: .92rem; }
-.rev-by span { display: block; color: var(--muted); font-weight: 400; font-size: .85rem; }
+.rev-by { margin-top: 1.1rem; display: flex; align-items: center; gap: .6rem; }
+.rev-avatar { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: .85rem; }
+.rev-by-name { font-weight: 600; font-size: .92rem; }
+.rev-by-name span { display: block; color: var(--muted); font-weight: 400; font-size: .8rem; }
+
+/* Google review summary widget */
+.g-rating { display: flex; gap: clamp(1.6rem, 4vw, 3rem); align-items: center; flex-wrap: wrap;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: clamp(1.6rem, 3vw, 2.4rem); margin-top: 2.6rem; }
+.g-rating__score { flex: none; text-align: center; min-width: 120px; }
+.g-rating__num { font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 3.1rem; line-height: 1; color: var(--ink); }
+.g-rating__stars { color: var(--accent); letter-spacing: 2px; font-size: 1.15rem; margin: .5rem 0 .3rem; }
+.g-rating__count { color: var(--muted); font-size: .88rem; }
+.g-rating__bars { flex: 1 1 260px; min-width: 220px; display: grid; gap: .45rem; }
+.g-rating__bar-row { display: grid; grid-template-columns: 14px 1fr; align-items: center; gap: .7rem; font-size: .8rem; color: var(--muted); }
+.g-rating__bar-track { height: 7px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.g-rating__bar-fill { height: 100%; background: var(--accent); border-radius: 999px; }
+.g-rating__cta { flex: none; display: flex; flex-direction: column; gap: .6rem; }
+.g-rating__by { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); text-align: right; }
+.g-rating__by a { color: var(--accent-deep); font-weight: 600; }
+@media (max-width: 640px) { .g-rating { flex-direction: column; align-items: stretch; } .g-rating__cta { flex-direction: row; } }
 
 /* Review funnel banner */
 .funnel { background: var(--ink); color: #fff; text-align: center; padding: clamp(3.5rem,7vw,5rem) 0; }
